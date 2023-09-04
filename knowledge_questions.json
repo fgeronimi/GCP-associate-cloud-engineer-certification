@@ -19,7 +19,7 @@
       "Cloud Shell"
     ],
     "correct_answers": ["C"],
-    "commentary": "That's correct! There are four ways you can interact with Google Cloud: There’s the Cloud Console, Cloud Shell and the Cloud SDK, the APIs, and the Cloud Mobile App. The Cloud Explorer is not a Google Cloud tool."
+    "commentary": "There are four ways you can interact with Google Cloud: There’s the Cloud Console, Cloud Shell and the Cloud SDK, the APIs, and the Cloud Mobile App. The Cloud Explorer is not a Google Cloud tool."
  },
  {
     "prompt": "I can convert an auto mode network to a custom mode network ?",
@@ -103,7 +103,7 @@
    "prompt": "Which of the following is not a type of IAM role?",
    "options": ["Custom", "Advanced", "Basic", "Predefined"],
    "correct_answers": ["B"],
-   "commentary": "That's correct! There are three types of roles in IAM: basic roles, predefined roles, and custom roles. There are no \"advanced\" roles in IAM."
+   "commentary": "There are three types of roles in IAM: basic roles, predefined roles, and custom roles. There are no \"advanced\" roles in IAM."
  },
  {
    "prompt": "What abstraction is primarily used to administer user access in IAM?",
@@ -115,7 +115,7 @@
    "prompt": "Which of the following is not a type of IAM member?",
    "options": ["Google Group", "Organization Account", "Cloud Identity domain", "Google Account", "Service Account", "Google Workspace domain"],
    "correct_answers": ["B"],
-   "commentary": "That's correct! There are five different types of members: Google Accounts, Service Accounts, Google Groups, Google Workspace domain, and Cloud Identity domains. There are no \"Organization Accounts\" in IAM."
+   "commentary": "There are five different types of members: Google Accounts, Service Accounts, Google Groups, Google Workspace domain, and Cloud Identity domains. There are no \"Organization Accounts\" in IAM."
  },
  {
    "prompt": "Which data storage service provides data warehouse services for storing data but also offers an interactive SQL interface for querying the data?",
@@ -179,7 +179,7 @@
  },
  {
    "prompt": "Pourquoi la surveillance est-elle importante pour Google ?",
-   "options": ["La surveillance est importante pour s'assurer que Google respecte les exigences réglementaires définies par les organismes de sécurité gouvernementaux et industriels.", "Google utilise la surveillance pour s'assurer qu'ils disposent de toutes les mesures importantes à des fins de rapport aux clients et aux autres organismes intéressés. Le nombre de signalements exige que la collecte et le reporting soient à la fois larges et approfondis.", "Il est à la base de la fiabilité du site qui intègre des aspects de génie logiciel et s'applique à des opérations dont les objectifs sont de créer des systèmes logiciels ultra-évolutifs et hautement fiables.", ""],
+   "options": ["La surveillance est importante pour s'assurer que Google respecte les exigences réglementaires définies par les organismes de sécurité gouvernementaux et industriels.", "Google utilise la surveillance pour s'assurer qu'ils disposent de toutes les mesures importantes à des fins de rapport aux clients et aux autres organismes intéressés. Le nombre de signalements exige que la collecte et le reporting soient à la fois larges et approfondis.", "Il est à la base de la fiabilité du site qui intègre des aspects de génie logiciel et s'applique à des opérations dont les objectifs sont de créer des systèmes logiciels ultra-évolutifs et hautement fiables."],
    "correct_answers": ["C"],
    "commentary": ""
  },
@@ -196,12 +196,6 @@
    "commentary": ""
  },
  {
-   "prompt": "Which service(s) are currently supported by Cloud Error Reporting?",
-   "options": ["App Engine Flexible", "Kubernetes", "App Engine Standard", "Compute Engine", ""],
-   "correct_answers": ["a", "b", "c", "d", "f"],
-   "commentary": ""
- },
- {
    "prompt": "What would not be considered a benefit of Cloud Operations?",
    "options": ["Reduces monitoring overhead", "Faster problem resolution", "Boosts all network performance", "Multi-cloud monitoring", ""],
    "correct_answers": ["c"],
@@ -209,39 +203,45 @@
  },
  {
    "prompt": "What is the foundational process at the base of Google's Site Reliability Engineering (SRE)?",
-   "options": ["Testing and release procedures.", "Monitoring.", "Capacity planning.", "Root cause analysis.", ""],
+   "options": ["Testing and release procedures.", "Monitoring.", "Capacity planning.", "Root cause analysis."],
    "correct_answers": ["b"],
    "commentary": "Before you can take any of the other actions, you must first be monitoring the system."
  },
  {
    "prompt": "What is the purpose of the Cloud Trace service?",
-   "options": ["Reporting on Google Cloud system errors.", "Reporting on application errors.", "Reporting on latency as part of managing performance.", "Reporting on Google Cloud resource consumption as part of managing performance.", ""],
+   "options": ["Reporting on Google Cloud system errors.", "Reporting on application errors.", "Reporting on latency as part of managing performance.", "Reporting on Google Cloud resource consumption as part of managing performance."],
    "correct_answers": ["c"],
    "commentary": ""
  },
  {
    "prompt": "Google Cloud’s operations suite integrates several technologies, including monitoring, logging, error reporting, and debugging that are commonly implemented in other environments as separate solutions using separate products. What are key benefits of integration of these services?",
-   "options": ["Ability to replace one tool with another from a different vendor", "Detailed control over the connections between the technologies", "Reduces overhead, reduces noise, streamlines use, and fixes problems faster", "Better for Google Cloud only so long as you don't need to monitor other applications or clouds", ""],
+   "options": ["Ability to replace one tool with another from a different vendor", "Detailed control over the connections between the technologies", "Reduces overhead, reduces noise, streamlines use, and fixes problems faster", "Better for Google Cloud only so long as you don't need to monitor other applications or clouds"],
    "correct_answers": ["c"],
    "commentary": "Integration with Google Cloud’s operations suite streamlines and unifies these traditionally independent services, making it much easier to establish procedures around them and to use them in continuous ways."
  },
  
   {
    "prompt": "Which of the following approaches to multi-project networking, uses a centralized network administration model?",
-   "options": ["Cloud VPN", "VPC Network Peering", "Shared VPC", ""],
+   "options": ["Cloud VPN", "VPC Network Peering", "Shared VPC"],
    "correct_answers": ["C"],
-   "commentary": "Correct! Shared VPC is a centralized approach to multi-project networking, because security and network policy occurs in a single designated VPC network."
+   "commentary": "Shared VPC is a centralized approach to multi-project networking, because security and network policy occurs in a single designated VPC network."
  },
  {
    "prompt": "What is the purpose of Virtual Private Networking (VPN)?",
-   "options": ["The main purpose is to encrypt data so that it can be stored in an encrypted format.", "To enable a secure communication method (a tunnel) to connect two trusted environments through an untrusted environment, such as the Internet.", "It is a method to detect intruders at the edge of a network boundary.", "VPNs are also called access control lists, or ACLs, and they limit network access.", ""],
+   "options": ["The main purpose is to encrypt data so that it can be stored in an encrypted format.", "To enable a secure communication method (a tunnel) to connect two trusted environments through an untrusted environment, such as the Internet.", "It is a method to detect intruders at the edge of a network boundary.", "VPNs are also called access control lists, or ACLs, and they limit network access."],
    "correct_answers": ["B"],
    "commentary": "VPNs use IPSec tunnels to provide an encapsulated and encrypted path through a hostile or untrusted environment."
  },
  {
    "prompt": "If you cannot meet Google’s peering requirements, which network connection service should you choose to connect to Google Workspace and YouTube?",
-   "options": ["Carrier Peering", "Direct Peering", "Dedicated Interconnect", "Partner Interconnect", ""],
+   "options": ["Carrier Peering", "Direct Peering", "Dedicated Interconnect", "Partner Interconnect"],
    "correct_answers": ["A"],
-   "commentary": "That’s correct! Carrier Peering allows you to connect to Google Workspace and YouTube without meeting Google’s peering requirements."
+   "commentary": "Carrier Peering allows you to connect to Google Workspace and YouTube without meeting Google’s peering requirements."
+ } ,
+ {
+   "prompt": "Which traffic is always free ?",
+   "options": ["Egress", "Ingress"],
+   "correct_answers": ["B"],
+   "commentary": ""
  }
 ]
