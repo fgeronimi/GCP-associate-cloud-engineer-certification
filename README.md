@@ -1,22 +1,19 @@
-# 👨‍🎓 Google Cloud Platform (GCP) Associate Cloud Engineer (ACE) Practice Tests Exams & Questions Answers
+# 👨‍🎓 Google Cloud Platform (GCP) Associate Cloud Engineer (ACE) CLI Training tool
 
-CLI training with pratice or knowledge for the GCP (Google Cloud Platform) Associate Cloud Engineer Certification
+**CLI training** with pratice or knowledge for the GCP (Google Cloud Platform) **Associate** Cloud Engineer Certification
 
 This repository contains a CLI training tool that was generated while preparing for the [Google Cloud Associate Cloud Engineer exam](https://cloud.google.com/certification/cloud-engineer). 
 
-
-## CLI training
-
 - 🤩 3 commands to start !
-- 📚 2 modes, knowledge questions or pratice question exams;
+- 📚 2 modes, **knowledge questions** or **pratice questions** exams;
 - ✅ Score & Explanation of why you answered incorrectly.
 
 
 ## Disclamer 
 
-- ✋ Absolutely nothing in this project is officially supported and should be used at your own risk.
-- ✋ Questions come from different unverified source (See above).
-- ✋ It's my first golang project, quick and dirty with chatGPT support (95% of the code) , so feel free to update it !
+- ✋ Absolutely nothing in this project is officially supported and should be used at your **own risk**.
+- ✋ Questions come from different **unverified** source (See above).
+- ✋ It's my first golang project, quick and dirty with chatGPT support (95% of the code), so feel free to update it !
 
 
 ## Install and run 
