@@ -1,0 +1,271 @@
+[{
+    "prompt": "What is the difference between the Google Cloud Console and Cloud Shell?",
+    "options": [
+      "The Cloud Console is a command-line tool, while Cloud Shell is a graphical user interface",
+      "Cloud Shell is a locally installed tool, while the Cloud Console is a temporary virtual machine.",
+      "There is no difference as these tools are 100% identical.",
+      "Cloud Shell is a command-line tool, while the Cloud Console is a graphical user interface"
+    ],
+    "correct_answers": ["D"],
+    "commentary": "The Cloud Console is a graphical user interface and Cloud Shell is a command-line tool. Both tools allow you to interact with Google Cloud. Even though the Cloud Console can do things Cloud Shell can't do and vice-versa, don’t think of them as alternatives, but think of them as one extremely flexible and powerful interface."
+ },
+
+ {
+    "prompt": "Which of the following does not allow you to interact with Google Cloud?",
+    "options": [
+      "Google Cloud Console",
+      "REST-based API",
+      "Cloud Explorer",
+      "Cloud Shell"
+    ],
+    "correct_answers": ["C"],
+    "commentary": "That's correct! There are four ways you can interact with Google Cloud: There’s the Cloud Console, Cloud Shell and the Cloud SDK, the APIs, and the Cloud Mobile App. The Cloud Explorer is not a Google Cloud tool."
+ },
+ {
+    "prompt": "I can convert an auto mode network to a custom mode network ?",
+    "options": ["Yes", "No"],
+    "correct_answers": ["A"],
+    "commentary": "A auto mode subnets start with a /20 IP range. They can be expanded to a /16 IP range, but no larger. Alternatively, you can convert the auto mode subnetwork to a custom mode subnetwork to increase the IP range further. Also, avoid creating large subnets."
+ },
+ {
+    "prompt": "I can convert a custom mode network to an auto mode network ?",
+    "options": ["Yes", "No"],
+    "correct_answers": ["B"],
+    "commentary": ""
+ },
+  {
+   "prompt": "How many IP addresses are reserved in a subnet?",
+   "options": ["1", "2", "3", "4"],
+   "correct_answers": ["D"],
+   "commentary": "The first and second addresses in the range, .0 and .1, are reserved for the network and the subnet’s gateway, respectively. The other reserved addresses in every subnet are the second-to-last address in the range and the last address, which is reserved as the \"broadcast\" address. To summarize, every subnet has four reserved IP addresses in its primary IP range."
+ },
+ {
+   "prompt": "Which IP address will you get by running ifconfig in a VM in GCP?",
+   "options": ["External IP address.", "Internal IP address.", "Both"],
+   "correct_answers": ["B"],
+   "commentary": "The external IP address is mapped to the VM's internal address transparently by VPC."
+ },
+ {
+   "prompt": "Without a VPC network, you cannot create VM instances, containers, or App Engine applications.",
+   "options": ["Yes", "No"],
+   "correct_answers": ["A"],
+   "commentary": ""
+ },
+ {
+   "prompt": "Which firewall rule allows the ping to mynet-eu-vm's external IP address?",
+   "options": ["mynetwork-allow-custom", "mynetwork-allow-ssh", "mynetwork-allow-icmp", "mynetwork-allow-rdp"],
+   "correct_answers": ["C"],
+   "commentary": "ICMP: Internet Control Message Protocol"
+ },
+ {
+   "prompt": "In Google Cloud, what is the minimum number of IP addresses that a VM instance needs?",
+   "options": ["One: Only an internal IP address", "Two: One internal and one external IP address", "Three: One internal, one external and one alias IP address"],
+   "correct_answers": ["A"],
+   "commentary": "That's correct! In Google Cloud, each virtual machine needs to have an internal IP address. The external IP address is optional; therefore, a VM instance only needs one IP address."
+ },
+ {
+   "prompt": "What is one benefit of applying firewall rules by tag rather than by address?",
+   "options": ["When a VM is created with a matching tag, the firewall rules apply irrespective of the IP address it is assigned.", "Tags help organizations track firewall billing.", "Tags in network traffic help with network sniffing.", "Tags on firewall rules control which ephemeral IP addresses VMs will receive."],
+   "correct_answers": ["A"],
+   "commentary": "When a VM is created the ephemeral external IP address is assigned from a pool. There is no way to predict which address will be assigned, so there is no way to write a rule that will match that VM's IP address before it is assigned. Tags allow a symbolic assignment that does not depend on order in the IP addresses. It makes for simpler, more general, and easier to maintain, firewall rules."
+ },
+ {
+   "prompt": "What are the three types of networks offered in Google Cloud?",
+   "options": ["IPv4 unicast network, IPv4 multicast network, IPv6 network", "Zonal, regional, and global", "Gigabit network, 10 gigabit network, and 100 gigabit network", "Default network, auto network, and custom network."],
+   "correct_answers": ["D"],
+   "commentary": "The three network types offered by Google Cloud are: default, auto and custom. Each project starts with a default network. The auto-type network uses the same subnet IP ranges as the default-type, with a network name other than default. A custom-type allows you to specify the IP ranges of subnets."
+ }, 
+ {
+   "prompt": "What are sustained use discounts?",
+   "options": ["Discounts you receive by using preemptible VM instances", "Purchase commitments for specific resources you know you will use", "Automatic discounts that you get for running specific Compute Engine resources for a significant portion of the billing month", "Per-second billing that starts after a 1 minute minimum"],
+   "correct_answers": [],
+   "commentary": ""
+ },
+ {
+   "prompt": "Which statement is true of Virtual Machine Instances in Compute Engine?",
+   "options": ["In Compute Engine, a VM is a networked service that simulates the features of a computer.", "Compute Engine uses VMware to create Virtual Machine Instances.", "A VM in Compute Engine always maps to a single hardware computer in a rack.", "All Compute Engine VMs are single tenancy and do not share CPU hardware."],
+   "correct_answers": ["A"],
+   "commentary": "VMs in Compute Engine are a collection of networked services which includes persistent disks that are network-attached. In some cases, the Google Cloud VM behaves unlike hardware or other kinds of virtual machines, for example, when a multi-tenant virtual CPU \"bursts\", using excess capacity beyond the VM spec."
+ },
+ {
+   "prompt": "Which statement is true of persistent disks?",
+   "options": ["Persistent disks are always HDDs (magnetic spinning disks).", "Persistent disks are physical hardware devices connected directly to VMs.", "Persistent disks are encrypted by default.", "Once created, a persistent disk cannot be resized."],
+   "correct_answers": ["C"],
+   "commentary": "Persistent Disks are not physical disks, they are a virtual-networked service. Each persistent disk remains encrypted either with system-defined keys or with customer-supplied keys."
+ },
+ {
+   "prompt": "Order the Cloud IAM resource hierarchy.",
+   "options": ["Organization > Folder > Project > Ressource", "Organization > Project > Folder > Ressource", "Organization > Ressource > Folder > Project", "Folder > Organization > Ressource > Project"],
+   "correct_answers": ["A"],
+   "commentary": "The organization node is the root node in this hierarchy.\nFolders are the children of the organization.\nProjects are the children of folders, and individual resources are the children of projects.\nEach resource has exactly one parent."
+ },
+ {
+   "prompt": "Which of the following is not a type of IAM role?",
+   "options": ["Custom", "Advanced", "Basic", "Predefined"],
+   "correct_answers": ["B"],
+   "commentary": "That's correct! There are three types of roles in IAM: basic roles, predefined roles, and custom roles. There are no \"advanced\" roles in IAM."
+ },
+ {
+   "prompt": "What abstraction is primarily used to administer user access in IAM?",
+   "options": ["Credentials, an abstraction of an authorization token.", "Privileges, an abstraction of access rights.", "Leases, an abstraction of periodic entitlements.", "Roles, an abstraction of job roles."],
+   "correct_answers": ["D"],
+   "commentary": "IAM administration uses pre-defined roles for administration of user access. The roles are defined by more granular permissions. But permissions are not applied to users directly, only through the roles that are assigned to them."
+ },
+ {
+   "prompt": "Which of the following is not a type of IAM member?",
+   "options": ["Google Group", "Organization Account", "Cloud Identity domain", "Google Account", "Service Account", "Google Workspace domain"],
+   "correct_answers": ["B"],
+   "commentary": "That's correct! There are five different types of members: Google Accounts, Service Accounts, Google Groups, Google Workspace domain, and Cloud Identity domains. There are no \"Organization Accounts\" in IAM."
+ },
+ {
+   "prompt": "Which data storage service provides data warehouse services for storing data but also offers an interactive SQL interface for querying the data?",
+   "options": ["Cloud SQL", "Datalab", "BigQuery", "Dataproc"],
+   "correct_answers": ["B"],
+   "commentary": "BigQuery is a data warehousing service that allows the storage of huge data sets while making them immediately processable without having to extract or run the processing in a separate service."
+ },
+ {
+   "prompt": "Which Google Cloud data storage service offers ACID transactions and can scale globally?",
+   "options": ["Cloud SQL", "Cloud Spanner", "Cloud Storage", "Cloud CDN"],
+   "correct_answers": ["B"],
+   "commentary": "Cloud Spanner provides ACID (Atomicity, Consistency, Isolation, Durability) properties that enable transactional reads and writes on the database. It can also scale globally."
+ },
+  {
+   "prompt": "What data storage service might you select if you just needed to migrate a standard relational database running on a single machine in a datacenter to the cloud?",
+   "options": ["Cloud Storage", "Persistent Disk", "Cloud SQL", "BigQuery"],
+   "correct_answers": ["C"],
+   "commentary": "Cloud SQL offers a PostgreSQL server or a MySQL server as a managed service."
+ },
+ {
+   "prompt": "If you read your data less than once per 30 days, which unstructured storage you should consider using?",
+   "options": ["Archive Storage", "Nearline Storage", "Coldline Storage", "Standard Storage"],
+   "correct_answers": ["B"],
+   "commentary": ""
+ },
+ {
+   "prompt": "If you read your data less than once per year, which unstructured storage you should consider using?",
+   "options": ["Archive Storage", "Nearline Storage", "Coldline Storage", "Standard Storage"],
+   "correct_answers": ["A"],
+   "commentary": ""
+ },
+ {
+   "prompt": "If you read your data less than once per 90 days, which unstructured storage you should consider using?",
+   "options": ["Archive Storage", "Nearline Storage", "Coldline Storage", "Standard Storage"],
+   "correct_answers": ["C"],
+   "commentary": ""
+ },
+ {
+   "prompt": "If you read your data more than once per 30 days, which unstructured storage you should consider using?",
+   "options": ["Archive Storage", "Nearline Storage", "Coldline Storage", "Standard Storage"],
+   "correct_answers": ["A"],
+   "commentary": ""
+ },
+ {
+   "prompt": "How do quotas protect Google Cloud customers?",
+   "options": ["By preventing resource use of too many different Google Cloud services.", "By preventing resource use in too many zones in a region.", "By preventing resource use by unknown users.", "By preventing uncontrolled consumption of resources."],
+   "correct_answers": ["D"],
+   "commentary": "Quotas are established at reasonable defaults for common cloud usage and proof of concept activities. If you are planning to scale up a production cloud solution you may need to request that the quotas be raised. This is a reasonable checkpoint to verify that actions that might result in a large consumption of resources are reviewed."
+ },
+ {
+   "prompt": "No resources in Google Cloud can be used without being associated with...",
+   "options": ["A bucket.", "A user.", "A virtual machine.", "A project."],
+   "correct_answers": ["D"],
+   "commentary": "All resources in Google Cloud are tracked and their consumption is logged against a project. A project relates resources to a billing method."
+ },
+ {
+   "prompt": "A budget is set at $500 and an alert is set at 100%. What happens when the full amount is used?",
+   "options": ["You have a 4-hour courtesy period before Google shuts down all resources.", "Everything in the associated project will be suspended because there is no more budget to spend.", "A notification email is sent to the Billing Administrator.", "Nothing. There is no point in sending a notification when there is no budget remaining."],
+   "correct_answers": ["C"],
+   "commentary": "Budgets in Google Cloud are not a way to prevent spending or stop resources. They are a tool for raising awareness about the consumption of resources so that a business can implement its own consumption management processes."
+ },
+ {
+   "prompt": "Pourquoi la surveillance est-elle importante pour Google ?",
+   "options": ["La surveillance est importante pour s'assurer que Google respecte les exigences réglementaires définies par les organismes de sécurité gouvernementaux et industriels.", "Google utilise la surveillance pour s'assurer qu'ils disposent de toutes les mesures importantes à des fins de rapport aux clients et aux autres organismes intéressés. Le nombre de signalements exige que la collecte et le reporting soient à la fois larges et approfondis.", "Il est à la base de la fiabilité du site qui intègre des aspects de génie logiciel et s'applique à des opérations dont les objectifs sont de créer des systèmes logiciels ultra-évolutifs et hautement fiables.", ""],
+   "correct_answers": ["C"],
+   "commentary": ""
+ },
+ {
+   "prompt": "Qu'est-ce qui n'est pas une bonne pratique recommandée pour les alertes ?",
+   "options": ["Signalez tout bruit pour vous assurer que tous les points de données sont présentés.", "Utilisez plusieurs canaux de notification pour éviter un seul point de défaillance.", "Configurez les alertes sur les symptômes et pas nécessairement sur les causes.", "Personnalisez vos alertes en fonction des besoins de l'audience."],
+   "correct_answers": ["A"],
+   "commentary": ""
+ },
+ {
+   "prompt": "Sélectionnez toutes les cibles valides pour les notifications d'alerte de disponibilité de Cloud Monitoring.",
+   "options": ["Service tiers", "pub/sub", "SMS", "e-mail", "Prestation EC2", "webhook"],
+   "correct_answers": ["a", "b", "c", "d", "f"],
+   "commentary": ""
+ },
+ {
+   "prompt": "Which service(s) are currently supported by Cloud Error Reporting?",
+   "options": ["App Engine Flexible", "Kubernetes", "App Engine Standard", "Compute Engine", ""],
+   "correct_answers": ["a", "b", "c", "d", "f"],
+   "commentary": ""
+ },
+ {
+   "prompt": "What would not be considered a benefit of Cloud Operations?",
+   "options": ["Reduces monitoring overhead", "Faster problem resolution", "Boosts all network performance", "Multi-cloud monitoring", ""],
+   "correct_answers": ["c"],
+   "commentary": ""
+ },
+ {
+   "prompt": "What is the foundational process at the base of Google's Site Reliability Engineering (SRE)?",
+   "options": ["Testing and release procedures.", "Monitoring.", "Capacity planning.", "Root cause analysis.", ""],
+   "correct_answers": ["b"],
+   "commentary": "Before you can take any of the other actions, you must first be monitoring the system."
+ },
+ {
+   "prompt": "What is the purpose of the Cloud Trace service?",
+   "options": ["Reporting on Google Cloud system errors.", "Reporting on application errors.", "Reporting on latency as part of managing performance.", "Reporting on Google Cloud resource consumption as part of managing performance.", ""],
+   "correct_answers": ["c"],
+   "commentary": ""
+ },
+ {
+   "prompt": "Google Cloud’s operations suite integrates several technologies, including monitoring, logging, error reporting, and debugging that are commonly implemented in other environments as separate solutions using separate products. What are key benefits of integration of these services?",
+   "options": ["Ability to replace one tool with another from a different vendor", "Detailed control over the connections between the technologies", "Reduces overhead, reduces noise, streamlines use, and fixes problems faster", "Better for Google Cloud only so long as you don't need to monitor other applications or clouds", ""],
+   "correct_answers": ["c"],
+   "commentary": "Integration with Google Cloud’s operations suite streamlines and unifies these traditionally independent services, making it much easier to establish procedures around them and to use them in continuous ways."
+ },
+ 
+  {
+   "prompt": "Which of the following approaches to multi-project networking, uses a centralized network administration model?",
+   "options": ["Cloud VPN", "VPC Network Peering", "Shared VPC", ""],
+   "correct_answers": ["C"],
+   "commentary": "Correct! Shared VPC is a centralized approach to multi-project networking, because security and network policy occurs in a single designated VPC network."
+ },
+ {
+   "prompt": "What is the purpose of Virtual Private Networking (VPN)?",
+   "options": ["The main purpose is to encrypt data so that it can be stored in an encrypted format.", "To enable a secure communication method (a tunnel) to connect two trusted environments through an untrusted environment, such as the Internet.", "It is a method to detect intruders at the edge of a network boundary.", "VPNs are also called access control lists, or ACLs, and they limit network access.", ""],
+   "correct_answers": ["B"],
+   "commentary": "VPNs use IPSec tunnels to provide an encapsulated and encrypted path through a hostile or untrusted environment."
+ },
+ {
+   "prompt": "If you cannot meet Google’s peering requirements, which network connection service should you choose to connect to Google Workspace and YouTube?",
+   "options": ["Carrier Peering", "Direct Peering", "Dedicated Interconnect", "Partner Interconnect", ""],
+   "correct_answers": ["A"],
+   "commentary": "That’s correct! Carrier Peering allows you to connect to Google Workspace and YouTube without meeting Google’s peering requirements."
+ },
+ {
+   "prompt": "Which Google Cloud Interconnect service requires a connection in a Google Cloud colocation facility and provides 10 Gbps per link?",
+   "options": ["Direct Peering", "Partner Interconnect", "Cloud VPN", "Carrier Peering", "Dedicated Interconnect", ""],
+   "correct_answers": ["E"],
+   "commentary": "Correct! Dedicated Interconnect requires a connection in a Google Cloud colocation facility and provides 10 Gbps per link."
+ },
+ {
+   "prompt": "Your organization plans to migrate its financial transaction monitoring application to Google Cloud. Auditors need to view the data and run reports in BigQuery, but they are not allowed to perform transactions in the application. You are leading the migration and want the simplest solution that will require the least amount of maintenance. What should you do?",
+   "options": ["A. Assign roles/bigquery.dataViewer to the individual auditors.", "B. Create a group for auditors and assign roles/viewer to them.", "C. Create a group for auditors, and assign roles/bigquery.dataViewer to them.", "D. Assign a custom role to each auditor that allows view-only access to BigQuery.", ""],
+   "correct_answers": ["C"],
+   "commentary": "Feedback\nA is not correct because Google recommended practice is to assign IAM roles to groups, not individuals. Groups are easier to manage than individual users and they provide high level visibility into roles and permissions.\nB is not correct because it uses a basic role to give auditors view access to all resources on the project.\nC is correct because it uses a predefined role to provide view access to BigQuery for the group of auditors. Auditors can be added or deleted from the group if job responsibilities change.\nD is not correct because using a predefined role can accomplish the goal and requires less maintenance.\n \nhttps://cloud.google.com/iam/docs/understanding-roles"
+ },
+ {
+   "prompt": "You are managing your company’s first Google Cloud project. Project leads, developers, and internal testers will participate in the project, which includes sensitive information. You need to ensure that only specific members of the development team have access to sensitive information. You want to assign the appropriate Identity and Access Management (IAM) roles that also require the least amount of maintenance. What should you do?",
+   "options": ["A. Assign a basic role to each user.", "B. Create groups. Assign a basic role to each group, and then assign users to groups.", "C. Create groups. Assign a Custom role to each group, including those who should have access to sensitive data. Assign users to groups.", "D. Create groups. Assign an IAM Predefined role to each group as required, including those who should have access to sensitive data. Assign users to groups.", ""],
+   "correct_answers": ["D"],
+   "commentary": "Feedback\nA is not correct for two reasons: The recommended practice is to use groups and not to assign roles to each user. Beyond that, Basic Roles do not have enough granularity to account for access to sensitive data.\nB is not correct because Basic roles do not have enough granularity to account for access to sensitive data.\nC is not correct because creating and maintaining Custom roles will require more maintenance than using Predefined roles.\nD is correct because Predefined roles are fine-grained enough to set permissions for specific roles requiring sensitive data access. This solution also uses groups, which is the recommended practice for managing permissions for individual roles.\n \nhttps://cloud.google.com/iam/docs/understanding-roles\n \nhttps://cloud.google.com/iam/docs/understanding-custom-roles"
+ },
+ {
+   "prompt": "You are responsible for monitoring all changes in your Cloud Storage and Firestore instances. For each change, you need to invoke an action that will verify the compliance of the change in near real time. You want to accomplish this with minimal setup. What should you do?",
+   "options": ["A. Use the trigger mechanism in each datastore to invoke the security script.", "B. Use Cloud Function events, and call the security script from the Cloud Function triggers.", "C. Use a Python script to get logs of the datastores, analyze them, and invoke the security script.", "D. Redirect your data-changing queries to an App Engine application, and call the security script from the application.", ""],
+   "correct_answers": ["B"],
+   "commentary": "A is not correct because setting triggers in each individual database requires additional setup.\nB is correct because it provides fast response and requires the minimal amount of setup.\nC is not correct because it requires custom programming.\nD is not correct because it requires significant custom programming.\n \nhttps://cloud.google.com/functions/docs/concepts/events-triggers"
+ }
+]
