@@ -243,29 +243,5 @@
    "options": ["Carrier Peering", "Direct Peering", "Dedicated Interconnect", "Partner Interconnect", ""],
    "correct_answers": ["A"],
    "commentary": "That’s correct! Carrier Peering allows you to connect to Google Workspace and YouTube without meeting Google’s peering requirements."
- },
- {
-   "prompt": "Which Google Cloud Interconnect service requires a connection in a Google Cloud colocation facility and provides 10 Gbps per link?",
-   "options": ["Direct Peering", "Partner Interconnect", "Cloud VPN", "Carrier Peering", "Dedicated Interconnect", ""],
-   "correct_answers": ["E"],
-   "commentary": "Correct! Dedicated Interconnect requires a connection in a Google Cloud colocation facility and provides 10 Gbps per link."
- },
- {
-   "prompt": "Your organization plans to migrate its financial transaction monitoring application to Google Cloud. Auditors need to view the data and run reports in BigQuery, but they are not allowed to perform transactions in the application. You are leading the migration and want the simplest solution that will require the least amount of maintenance. What should you do?",
-   "options": ["A. Assign roles/bigquery.dataViewer to the individual auditors.", "B. Create a group for auditors and assign roles/viewer to them.", "C. Create a group for auditors, and assign roles/bigquery.dataViewer to them.", "D. Assign a custom role to each auditor that allows view-only access to BigQuery.", ""],
-   "correct_answers": ["C"],
-   "commentary": "Feedback\nA is not correct because Google recommended practice is to assign IAM roles to groups, not individuals. Groups are easier to manage than individual users and they provide high level visibility into roles and permissions.\nB is not correct because it uses a basic role to give auditors view access to all resources on the project.\nC is correct because it uses a predefined role to provide view access to BigQuery for the group of auditors. Auditors can be added or deleted from the group if job responsibilities change.\nD is not correct because using a predefined role can accomplish the goal and requires less maintenance.\n \nhttps://cloud.google.com/iam/docs/understanding-roles"
- },
- {
-   "prompt": "You are managing your company’s first Google Cloud project. Project leads, developers, and internal testers will participate in the project, which includes sensitive information. You need to ensure that only specific members of the development team have access to sensitive information. You want to assign the appropriate Identity and Access Management (IAM) roles that also require the least amount of maintenance. What should you do?",
-   "options": ["A. Assign a basic role to each user.", "B. Create groups. Assign a basic role to each group, and then assign users to groups.", "C. Create groups. Assign a Custom role to each group, including those who should have access to sensitive data. Assign users to groups.", "D. Create groups. Assign an IAM Predefined role to each group as required, including those who should have access to sensitive data. Assign users to groups.", ""],
-   "correct_answers": ["D"],
-   "commentary": "Feedback\nA is not correct for two reasons: The recommended practice is to use groups and not to assign roles to each user. Beyond that, Basic Roles do not have enough granularity to account for access to sensitive data.\nB is not correct because Basic roles do not have enough granularity to account for access to sensitive data.\nC is not correct because creating and maintaining Custom roles will require more maintenance than using Predefined roles.\nD is correct because Predefined roles are fine-grained enough to set permissions for specific roles requiring sensitive data access. This solution also uses groups, which is the recommended practice for managing permissions for individual roles.\n \nhttps://cloud.google.com/iam/docs/understanding-roles\n \nhttps://cloud.google.com/iam/docs/understanding-custom-roles"
- },
- {
-   "prompt": "You are responsible for monitoring all changes in your Cloud Storage and Firestore instances. For each change, you need to invoke an action that will verify the compliance of the change in near real time. You want to accomplish this with minimal setup. What should you do?",
-   "options": ["A. Use the trigger mechanism in each datastore to invoke the security script.", "B. Use Cloud Function events, and call the security script from the Cloud Function triggers.", "C. Use a Python script to get logs of the datastores, analyze them, and invoke the security script.", "D. Redirect your data-changing queries to an App Engine application, and call the security script from the application.", ""],
-   "correct_answers": ["B"],
-   "commentary": "A is not correct because setting triggers in each individual database requires additional setup.\nB is correct because it provides fast response and requires the minimal amount of setup.\nC is not correct because it requires custom programming.\nD is not correct because it requires significant custom programming.\n \nhttps://cloud.google.com/functions/docs/concepts/events-triggers"
  }
 ]
